@@ -1,0 +1,132 @@
+ <!doctype.html>
+ <html>
+ <head>    
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>WarnerBros</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ </head>
+ 
+ <body>
+
+  <div class="topnav">
+  
+  <a href="index.html">
+  <img src="WarnerBros\images\logo.png" alt="LOGO" style="width:50px;height:30px;">
+  </a>
+  <a href="movies.html" target="_blank">Movies</a>
+  <a href="tvshows.html" target="_blank">TV Shows</a>
+  <a href="collections.html" target="_blank">Collections</a>
+  <a href="games & apps.html" target="_blank">Games & Apps</a>
+  <a href="feedback.html" target="_blank">Feedback</a>
+  </div>
+  
+  
+
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="WarnerBros\images\12.jpg" style="width:100%">
+    <div class="text">ELVIS</div>
+  </div>
+
+  <div class="mySlides fade">
+   <div class="numbertext"></div>
+   <img src="WarnerBros\images\2.jpg" style="width:100%">
+   <div class="text">DUNE</div>
+  </div>
+
+  <div class="mySlides fade">
+   <div class="numbertext"></div>
+   <img src="WarnerBros\images\13.jpg" style="width:100%">
+   <div class="text">BLACK ADAM</div>
+  </div>
+ 
+   <div class="mySlides fade">
+   <div class="numbertext"></div>
+   <img src="WarnerBros\images\14.jpg" style="width:100%">
+   <div class="text">THE MATRIX RESSURECTIONS</div>
+  </div>
+  
+   <div class="mySlides fade">
+   <div class="numbertext"></div>
+   <img src="WarnerBros\images\16.jpg" style="width:100%">
+   <div class="text">THE BATMAN</div>
+  </div>
+  
+  
+
+ <a class="prev" onclick="plusSlides(-1)">❮</a>
+ <a class="next" onclick="plusSlides(1)">❯</a>
+
+ </div>
+ <br>
+
+ 
+ 
+    <script>
+   let slideIndex = 1;
+   showSlides(slideIndex);
+
+   function plusSlides(n) {
+   showSlides(slideIndex += n);
+}
+
+  function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+  function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+ 
+	 
+	<div class="container">MOVIE & TV FAVORITES</div>
+	
+	<div class="scroll-container">
+     <img src="WarnerBros\images\3.jpg" alt="Meg 2" class="responsive" width="200" height="300">
+     <img src="WarnerBros\images\4.jpg" alt="Barbie" class="responsive" width="200" height="300">
+     <img src="WarnerBros\images\5.jpg" alt="Flash" class="responsive" width="200" height="300">
+     <img src="WarnerBros\images\6.jpg" alt="Air" class="responsive" width="200" height="300">
+	 <img src="WarnerBros\images\7.jpg" alt="Evil Dead Rise" class="responsive" width="200" height="300" >
+	 <img src="WarnerBros\images\8.jpg" alt="Shazam" class="responsive" width="200" height="300">
+	 <img src="WarnerBros\images\9.jpg" alt="Black Adam" class="responsive" width="200" height="300">
+	 <img src="WarnerBros\images\10.jpg" alt="Super Pets" class="responsive" width="200" height="300">
+	 <img src="WarnerBros\images\17.jpg" alt="Dark Knight Rises" class="responsive" width="200" height="300">
+	 <img src="WarnerBros\images\18.jpg" alt="King Richard" class="responsive" width="200" height="300">
+	 <img src="WarnerBros\images\19.jpg" alt="Dumbledore" class="responsive" width="200" height="300">
+	 <img src="WarnerBros\images\20.jpg" alt="Godzilla" class="responsive" width="200" height="300">
+	 
+    </div>
+	
+	
+ </body>
+    
+    <div class="footer">
+	<a href="https://www.facebook.com/wbpictures/" class="fa fa-facebook"></a>
+    <a href="https://www.twitter.com/wbpictures/" class="fa fa-twitter"></a>
+	<a href="https://www.linkedin.com/wbpictures/" class="fa fa-linkedin"></a>
+    <a href="https://www.youtube.com/wbpictures/" class="fa fa-youtube"></a>
+    <a href="https://www.instagram.com/wbpictures/" class="fa fa-instagram"></a>
+    <a href="https://www.pinterest.com/wbpictures/" class="fa fa-pinterest"></a>
+	</div>
+ 
+ </html>
